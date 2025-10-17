@@ -1,7 +1,7 @@
-import React from "react";
 import "./App.css";
 import imgRestaurante from "./assets/hashtaurante.webp";
 import Categorias from "./components/Categorias";
+import Cards from "./components/Cards";
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
       </div>
 
       <Categorias />
+
+      <Cards />
     </div>
   );
 }
