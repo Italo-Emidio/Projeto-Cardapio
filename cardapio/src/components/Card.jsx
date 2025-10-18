@@ -1,21 +1,17 @@
-import imgBurger from "../assets/pratos/burguer-picanha.jpeg";
-
-const Card = () => {
+//Desestruturação
+const Card = ({ titulo, descricao, preco, imagem }) => {
   return (
     <div className="card">
       <div className="card__textos">
-        <h2 className="card__titulo">Burguer de Picanha</h2>
+        <h2 className="card__titulo">{titulo}</h2>
 
-        <p>
-          Burguer de Picanha Angus, Queijo Cheddar, Crisp de Cebola e Geléia de
-          Bacon
-        </p>
+        <p>{descricao}</p>
 
-        <p className="card__preco">R$ 44,90</p>
+        <p className="card__preco">{preco}</p>
       </div>
 
       <div className="card__img">
-        <img src={imgBurger} alt="Foto do Hambúrguer" />
+        <img src={imagem} alt="Foto do Hamburguer" />
       </div>
     </div>
   );
